@@ -5,3 +5,4 @@ test.db
 *~
 media/
 .sass_cache/
+settings_local.py
