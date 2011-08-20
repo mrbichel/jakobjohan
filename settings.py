@@ -21,8 +21,8 @@ if DEVELOPMENT_MODE:
     STATIC_URL = '/static/'
 else:
     DEBUG = False
-    MEDIA_URL = 'http://media.jakobjohan.dk/'
-    STATIC_URL = 'http://static.jakobjohan.dk/'
+    MEDIA_URL = 'http://media.jakob.johan.cc/'
+    STATIC_URL = 'http://static.jakob.johan.cc/'
     ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
 
 TEMPLATE_DEBUG = DEBUG
