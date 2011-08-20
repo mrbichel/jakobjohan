@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% load thumbnail %}
+
+{% block bodyclass %}home{% endblock %}
+
+{% block title %}Nordic design & Indian craftsmanship{% endblock %}
+
+{% block description %}Jakob.Johan - Nordic design & Indian craftsmanship. High quality leather sleeves for 13 and 15 inch laptops.{% endblock %}
+
+
+{% block content %}
+    <article>
+
+
+
+    <div id="gallery">
+
+        {% for image in images %}
+
+
+            <div class="img n{{ forloop.counter }} {% cycle 'first' 'middle' 'last' %}">
+
+                <div class="_ls"></div>
+
+                <div class="_f">
+
+                {% thumbnail image.file "1000" as big %}
+                    {% thumbnail image.file "252x96" crop="center" as im %}
+                        <a href="{{ big.url }}"><img src="{{ im.url }}" width="{{ im.width }}" height="{{ im.height }}"></a>
+                    {% endthumbnail %}
+                {% endthumbnail %}
+
+                </div>
+
+                <div class="_rs"></div>
+
+            </div>
+
+        {% endfor %}
+
+    </div>
+
+
+    </article>
+
+{% endblock %}

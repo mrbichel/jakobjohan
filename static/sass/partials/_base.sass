@@ -1,0 +1,111 @@
+@import "compass/reset"
+@import "compass/css3/border-radius"
+@import "compass/css3/transform"
+@import "compass/css3/transition"
+@import "compass/utilities/general/clearfix"
+
+article, aside, canvas, figure, figure img, figcaption, hgroup, footer, header, nav, section, audio, video
+  display: block
+
+hr
+  margin: 0
+  padding: 0
+
+a img
+  border: 0
+
+$full-width: 896px
+
+$background-color: #fafefb
+$title-link-color: #545aa7
+$link-color: #0067a5
+$text-color: #2e3436
+$highlight-color: #ce5c00
+$secondary-highlight-color: #A7A154
+$subtle-color: lighten($text-color, 6%)
+$title-color: darken($text-color, 6%)
+$split-border-style: dotted
+
+
+/*	Typography presets
+ *	------------------
+
+body
+  font: 16px / 24px verdana
+
+h1, h2, h3, h4, h5, h6
+  color: $title-color
+  font-family: 'EB Garamond', serif
+
+h1
+  font-size: 68px
+  line-height: 72px
+  letter-spacing: -1px
+  font-weight: bold
+
+h2
+  font-size: 42px
+  line-height: 48px
+
+h3
+  font-size: 26px
+  line-height: 36px
+
+h4
+  font-size: 22px
+  line-height: 30px
+
+
+=small
+  font-size: 13px
+  line-height: 18px
+  color: $subtle-color
+
+small, .small
+  +small
+
+a
+  color: $link-color
+  text-decoration: none
+  border-bottom: 1px solid
+  &:visited
+    color: $link-color
+  &:hover, &:active, &:focus
+    color: darken($link-color, 21%)
+    border-bottom: 1px solid
+
+h1, h2, h3, h4, h5, h6, img
+  a
+    text-decoration: none
+    border: none
+    &:hover
+      border: none
+
+ins
+  text-decoration: none
+
+
+body
+  border-top: 2px solid $title-color
+  padding: 72px 0 84px
+  background: $background-color
+  color: $text-color
+  -webkit-text-size-adjust: 100% /* Stops Mobile Safari from auto-adjusting font-sizes */
+
+#content .inner, #siteheader .inner, #sitefooter .inner
+  +clearfix
+  margin: 0 auto
+  padding: 0 48px
+  width: $full-width
+  position: relative
+
+#content
+  margin: 24px auto
+
+#content
+  p, ul, ol, pre
+    margin-bottom: 24px
+
+  ul
+    list-style: disc
+    padding: 0 0 0 24px

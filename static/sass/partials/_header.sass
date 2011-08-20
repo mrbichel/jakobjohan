@@ -1,0 +1,60 @@
+#siteheader
+  text-align: center
+
+  //border-top: 1px solid black
+  //border-bottom: 1px solid black
+
+  #logo
+    border-top: 4px solid $title-color
+    border-bottom: 2px solid $title-color
+    background: transparent url('../img/header.jpg') center center no-repeat
+    height: 24*6px
+    hgroup
+      padding-top: 24px
+      text-shadow: 0px 0px 10px black
+    a
+      h1, h2
+        color: #fcfffe
+
+    h1
+      font-size: 42px
+      line-height: 48px
+      font-weight: 400
+    h2
+      font-size: 26px
+      line-height: 36px
+
+  nav
+    background-color: $title-color
+    border-bottom: 2px solid $title-color
+    +clearfix
+    ul
+      padding-left: 34px
+      li
+        display: block
+        float: left
+        width: 252px
+        padding-right: 24px
+        a
+          font-size: 26px
+          line-height: 36px
+          color: #fafcfe
+          text-decoration: none
+          font-family: 'EB Garamond', serif
+          border-bottom: none
+
+
+body.home
+  #siteheader
+    #logo
+      background: transparent url('../img/header.jpg') no-repeat
+      height: 24*14px
+      hgroup
+        padding-top: 4*24px
+      h1
+        font-size: 68px
+        line-height: 72px
+
+      h2
+        font-size: 42px
+        line-height: 48px
