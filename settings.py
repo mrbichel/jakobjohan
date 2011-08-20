@@ -24,6 +24,12 @@ else:
     MEDIA_URL = 'http://media.jakob.johan.cc/'
     STATIC_URL = 'http://static.jakob.johan.cc/'
     ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
+    CACHES = {
+        'default': {
+            'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
+            'LOCATION': '127.0.0.1:11211',
+        }
+    }
 
 TEMPLATE_DEBUG = DEBUG
 
