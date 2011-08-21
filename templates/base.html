@@ -4,7 +4,7 @@
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <title>{% block title %}Jakob.Johan{% endblock %} ~ Jakob.Johan</title>
+    <title>{% block title %}~ Jakob.Johan{% endblock %}</title>
 
     <meta name="description" content="{% block description %}Nordic design & Indian craftsmanship{% endblock %}">
 
@@ -19,6 +19,24 @@
     <script src="{{ STATIC_URL }}js/base.js"></script>
     
     <!--[if lt IE 9]><script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+
+    {% if not user.is_staff %}
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-25257331-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+    {% endif %}
+
 
 </head>
 <body class="{% block bodyclass %}{% endblock %}">

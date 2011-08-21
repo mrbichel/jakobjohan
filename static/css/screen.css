@@ -99,7 +99,7 @@ h1 {
   font-size: 68px;
   line-height: 72px;
   letter-spacing: -1px;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 /* line 46, ../sass/partials/_base.sass */
@@ -356,4 +356,47 @@ body.home #siteheader #logo h2 {
   font-size: 13px;
   line-height: 18px;
   color: #3c4447;
+}
+
+/* line 5, ../sass/partials/_pages.sass */
+body.textpage #content article header {
+  margin-bottom: 24px;
+}
+
+/* line 13, ../sass/partials/_pages.sass */
+body.story #content article p, body.contact #content article p {
+  width: 528px;
+}
+
+/* line 21, ../sass/partials/_pages.sass */
+body.sleeves #content article {
+  position: relative;
+}
+/* line 24, ../sass/partials/_pages.sass */
+body.sleeves #content article #details, body.sleeves #content article #about, body.sleeves #content article #purchase {
+  width: 528px;
+}
+/* line 28, ../sass/partials/_pages.sass */
+body.sleeves #content article #details dl .price, body.sleeves #content article #about dl .price, body.sleeves #content article #purchase dl .price {
+  display: block;
+  width: 160px;
+  margin-right: 24px;
+  float: left;
+}
+/* line 34, ../sass/partials/_pages.sass */
+body.sleeves #content article #details dl dd, body.sleeves #content article #about dl dd, body.sleeves #content article #purchase dl dd {
+  margin-left: 24px;
+}
+/* line 38, ../sass/partials/_pages.sass */
+body.sleeves #content article figure {
+  position: absolute;
+  width: 344px;
+  height: 720px;
+  overflow: hidden;
+  top: 96px;
+  right: 0;
+}
+/* line 46, ../sass/partials/_pages.sass */
+body.sleeves #content article figure .image {
+  margin-bottom: 24px;
 }

@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
 
-{% block title %}The story{% endblock %}
+{% block title %}The story {{ block.super }}{% endblock %}
+
+{% block bodyclass %}textpage story{% endblock %}
 
 {% block description %}The story of how Jakob and Johan had the first leather bags made in India.{% endblock %}
 
@@ -12,10 +14,10 @@
 
  <p>In February, 2011, Jakob Pethick and Johan Bichel, two Danes volunteering at a nearby school, met a group of Swedes
      at The Only Place Guesthouse near Pondicherry, India.
-     The Swedes had started a fashion accessory business a few months back, commissioned the production of several hundred
-     leather bags - cows are only that holy, even in India -, travelled around India and were now back to pick up the
+     They had started a fashion accessory business a few months back, commissioned the production of several hundred
+     leather bags - cows are only that holy in India -, travelled around India and were now back to pick up the
      finished goods. Intrigued by the idea of working with and creating leather wares, Jakob and Johan had the Swedes
-     show them the leather workshop where they had had everything produced. </p>
+     show them the leather workshop where everything was produced. </p>
 
 <p>After a dirty and dusty bike ride through the spiritual society of Auroville,
     they came to a small house where a few dozen men and women were busy stitching,
@@ -40,6 +42,8 @@
     turn, Mr. Ganesan got hold of some high-quality leather from Chennai (Madras), and produced the first JAKOB.JOHAN
     laptop leather sleeve. After a few minor corrections, 40 more were produced - handcrafted from genuine
     leather in the small leather workshop in Pondicherry, India - and shipped to Denmark.</p>
+
+</div>
 
 </article>
 
