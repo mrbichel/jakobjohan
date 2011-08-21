@@ -4,5 +4,5 @@ test.db
 *.pyc
 *~
 media/
-.sass_cache/
+static/.sass_cache/
 settings_local.py
