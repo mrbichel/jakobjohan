@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% load thumbnail %}
+
+{% block title %}Leather sleeves {{ block.super }}{% endblock %}
+
+{% block bodyclass %}textpage sleeves{% endblock %}
+
+{% block description %}Handcrafted leather sleeves for 13.3" and 15" inch laptops{% endblock %}
+
+{% block content %}
+<article id="leather_sleeves_page" class="page">
+    <header><h1>Leather sleeves</h1></header>
+
+    <section id="about">
+        <p>A limited edition of 40 leather sleeves are now on sale. Designed by Jakob Pethick and Johan Bichel Lindegaard
+            and handcrafted from the finest Indian leather. the sleeves are designed for the 13.3" and 15" Apple Macbook
+            and Macbook Pro but will fit most 13", 13.3" and 15" laptops.</p>
+        <p>
+            The sleeves are made from natural leather so each and every one has its own unique appearance,
+            two pieces of leather are never the same. Thus we can't guarantee your sleeve will look exactly like the one on the pictures.
+
+        </p>
+    </section>
+
+    <figure>
+        {% for image in images %}
+            <div class="image">
+            {% thumbnail image.file "1000" as big %}
+                    {% thumbnail image.file "344x216" crop="center" as im %}
+                        <a href="{{ big.url }}"><img src="{{ im.url }}" width="{{ im.width }}" height="{{ im.height }}"></a>
+                    {% endthumbnail %}
+            {% endthumbnail %}
+            </div>
+        {% endfor %}
+    </figure>
+
+    <section id="details">
+    <h2>Details</h2>
+    <ul>
+        <li>Designed for 13.3" and 15" Laptops
+        <li>Snug fit with Apples Macbook and Macbook Pro</li>
+        <li>Protective internal padding</li>
+        <li>Water-resistant seams</li>
+        <li>Magnetic buttons</li>
+        <li>Handmade from finest Indian leather</li>
+        <li>1 year extended warranty</li>
+    </ul>
+    </section>
+
+
+
+
+    <section id="purchase">
+        <h2>Buy</h2>
+        <p>Get in touch at <a href="mailto:jakob@johan.cc">jakob@johan.cc</a> if you are interested in purchasing a sleeve. We can currently take payment as Danish bank transfer, cash or paypal. We ship internationally.</p>
+
+        <h3>Prices</h3>
+        <dl>
+        <div class="price"><dt><h4>Hampi 13.3"</h4></dt>
+            <dd>845.00 DKK</dd></div>
+        <div class="price"><dt><h4>Pondicherry 15"</h4></dt>
+            <dd>895.00 DKK</dd></div>
+        </dl>
+
+    </section>
+
+</article>
+
+
+{% endblock %}
