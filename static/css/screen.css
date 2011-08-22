@@ -158,16 +158,16 @@ ins {
   text-decoration: none;
 }
 
-/* line 88, ../sass/partials/_base.sass */
+/* line 87, ../sass/partials/_base.sass */
 body {
-  border-top: 2px solid #202425;
+  border-top: 6px solid #202425;
   padding: 72px 0 84px;
   background: #fafefb;
   color: #2e3436;
   -webkit-text-size-adjust: 100%;
 }
 
-/* line 95, ../sass/partials/_base.sass */
+/* line 94, ../sass/partials/_base.sass */
 #content .inner, #siteheader .inner, #sitefooter .inner {
   overflow: hidden;
   *zoom: 1;
@@ -177,16 +177,16 @@ body {
   position: relative;
 }
 
-/* line 102, ../sass/partials/_base.sass */
+/* line 101, ../sass/partials/_base.sass */
 #content {
   margin: 24px auto;
 }
 
-/* line 106, ../sass/partials/_base.sass */
+/* line 105, ../sass/partials/_base.sass */
 #content p, #content ul, #content ol, #content pre {
   margin-bottom: 24px;
 }
-/* line 109, ../sass/partials/_base.sass */
+/* line 108, ../sass/partials/_base.sass */
 #content ul {
   list-style: disc;
   padding: 0 0 0 24px;
@@ -352,6 +352,11 @@ body.home #siteheader #logo h2 {
   padding-top: 24px;
 }
 /* line 5, ../sass/partials/_footer.sass */
+#sitefooter .wrap {
+  border-top: 12px solid #202425;
+  padding-top: 12px;
+}
+/* line 9, ../sass/partials/_footer.sass */
 #sitefooter p {
   font-size: 13px;
   line-height: 18px;
