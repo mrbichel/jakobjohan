@@ -363,37 +363,42 @@ body.home #siteheader #logo h2 {
   color: #3c4447;
 }
 
-/* line 5, ../sass/partials/_pages.sass */
+/* line 4, ../sass/partials/_pages.sass */
 body.textpage #content article header {
   margin-bottom: 24px;
 }
 
-/* line 13, ../sass/partials/_pages.sass */
+/* line 10, ../sass/partials/_pages.sass */
 body.story #content article p, body.contact #content article p {
   width: 528px;
 }
 
-/* line 21, ../sass/partials/_pages.sass */
+/* line 15, ../sass/partials/_pages.sass */
 body.sleeves #content article {
   position: relative;
 }
-/* line 24, ../sass/partials/_pages.sass */
+/* line 18, ../sass/partials/_pages.sass */
 body.sleeves #content article #details, body.sleeves #content article #about, body.sleeves #content article #purchase {
   width: 528px;
 }
-/* line 28, ../sass/partials/_pages.sass */
+/* line 22, ../sass/partials/_pages.sass */
 body.sleeves #content article #details dl .price, body.sleeves #content article #about dl .price, body.sleeves #content article #purchase dl .price {
   display: block;
   width: 160px;
   margin-right: 24px;
   float: left;
 }
-/* line 34, ../sass/partials/_pages.sass */
+/* line 28, ../sass/partials/_pages.sass */
 body.sleeves #content article #details dl dd, body.sleeves #content article #about dl dd, body.sleeves #content article #purchase dl dd {
   margin-left: 24px;
 }
-/* line 38, ../sass/partials/_pages.sass */
-body.sleeves #content article figure {
+
+/* line 33, ../sass/partials/_pages.sass */
+body.story #content article, body.sleeves #content article {
+  position: relative;
+}
+/* line 36, ../sass/partials/_pages.sass */
+body.story #content article figure, body.sleeves #content article figure {
   position: absolute;
   width: 344px;
   height: 720px;
@@ -401,7 +406,7 @@ body.sleeves #content article figure {
   top: 96px;
   right: 0;
 }
-/* line 46, ../sass/partials/_pages.sass */
-body.sleeves #content article figure .image {
+/* line 44, ../sass/partials/_pages.sass */
+body.story #content article figure .image, body.sleeves #content article figure .image {
   margin-bottom: 24px;
 }

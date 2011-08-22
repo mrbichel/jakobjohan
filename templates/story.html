@@ -1,4 +1,6 @@
 {% extends 'base.html' %}
+{% load thumbnail %}
+
 
 {% block title %}The story {{ block.super }}{% endblock %}
 
@@ -39,7 +41,17 @@
     prototype. After a few minor corrections, 40 more were produced - handcrafted from genuine
     leather in the small leather workshop in Pondicherry, India - and shipped to Denmark.</p>
 
-</div>
+<figure>
+    {% for image in images %}
+        <div class="image">
+        {% thumbnail image.file "1000" as big %}
+                {% thumbnail image.file "344x216" crop="center" as im %}
+                    <a href="{{ big.url }}"><img src="{{ im.url }}" width="{{ im.width }}" height="{{ im.height }}"></a>
+                {% endthumbnail %}
+        {% endthumbnail %}
+        </div>
+    {% endfor %}
+</figure>
 
 </article>
 
