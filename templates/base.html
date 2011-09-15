@@ -15,10 +15,15 @@
       <link href="{{ STATIC_URL }}css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <![endif]-->
 
-    <script src="{{ STATIC_URL }}js/lib/jquery.js"></script>
-    <script src="{{ STATIC_URL }}js/base.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+
+    <!--<script src="{{ STATIC_URL }}js/base.js"></script>-->
+    {% block js %}{% endblock %}
     
     <!--[if lt IE 9]><script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
 
 
     {% if not user.is_staff %}
@@ -75,8 +80,17 @@
 <footer id="sitefooter">
     <div class="inner">
         <div class="wrap">
-        <p><small>&copy; 2011 Jakob Pethick and Johan Bichel Lindegaard</small></p>
-        <p>Design by Thomas Pethick and <a href="http://Johan.cc">Johan</a>.</p>
+
+
+        <section id="copy">
+            <p><small>&copy; 2011 Jakob Pethick and Johan Bichel Lindegaard</small></p>
+            <p>Design by Thomas Pethick and <a href="http://Johan.cc">Johan</a>. Hosted on a <a href="http://www.linode.com/?r=850e408f57a78445a1970440354f39da5d81b6bf">linode</a>.</p>
+        </section>
+
+        <section id="social">
+            
+        </section>
+
         </div>
     </div>
 </footer>
