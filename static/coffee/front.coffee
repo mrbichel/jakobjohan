@@ -74,7 +74,7 @@ $(document).ready ->
 
 
     $("#gallery img").css
-        opacity: "0.9"
+        opacity: "0.85"
 
 
     $("#gallery img").hover (->
@@ -95,12 +95,12 @@ $(document).ready ->
 
     ), ->
         $(this).css
-            opacity: "0.6"
+            opacity: "0.85"
 
         for r in rs
             spacers[r].el.animate
                 backgroundColor: spacers[r].baseColor
-            , 800, ->
+            , 1200, ->
                 
 
 

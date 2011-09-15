@@ -72,7 +72,7 @@
     });
     rs = [];
     $("#gallery img").css({
-      opacity: "0.9"
+      opacity: "0.85"
     });
     return $("#gallery img").hover((function() {
       var n, r, _i, _len, _ref;
@@ -96,14 +96,14 @@
     }), function() {
       var r, _i, _len, _results;
       $(this).css({
-        opacity: "0.6"
+        opacity: "0.85"
       });
       _results = [];
       for (_i = 0, _len = rs.length; _i < _len; _i++) {
         r = rs[_i];
         _results.push(spacers[r].el.animate({
           backgroundColor: spacers[r].baseColor
-        }, 800, function() {}));
+        }, 1200, function() {}));
       }
       return _results;
     });
