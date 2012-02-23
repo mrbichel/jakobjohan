@@ -45,6 +45,18 @@
 
 </head>
 <body class="{% block bodyclass %}{% endblock %}">
+    
+    {# facebook SDK #}
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=190231197703376";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    
+    
 
 <header id="siteheader">
     <div class="inner">
@@ -84,11 +96,13 @@
 
         <section id="copy">
             <p><small>&copy; 2011 Jakob Pethick and Johan Bichel Lindegaard</small></p>
-            <p>Design by Thomas Pethick and <a href="http://Johan.cc">Johan</a>. Hosted on a <a href="http://www.linode.com/?r=850e408f57a78445a1970440354f39da5d81b6bf">linode</a>.</p>
+            <p>Design by Thomas Pethick and <a href="http://Johan.cc">Johan</a>.</p>
         </section>
 
         <section id="social">
-            
+            <div id="facebook-like">
+                <div class="fb-like" data-href="https://facebook.com/jakobjohan" data-send="false" data-layout="button_count" data-width="80" data-show-faces="true" data-font="segoe ui"></div>
+            </div>
         </section>
 
         </div>
