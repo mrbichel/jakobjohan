@@ -4,7 +4,9 @@ import sys
 import platform
 
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))
+
 PRODUCTION_HOSTNAME = "tango"
+DEVELOPMENT_MODE = (platform.node() != PRODUCTION_HOSTNAME)
 
 sys.path.append(BASE_PATH + '/apps')
 
@@ -12,9 +14,6 @@ ADMINS = (
     ('Johan Bichel Lindegaard', 'sysadmin@tango.johan.cc'),
 )
 MANAGERS = ADMINS
-
-DEVELOPMENT_MODE = (platform.node() != PRODUCTION_HOSTNAME)
-
 
 ROOT_URLCONF = 'jakobjohan.urls'
 
@@ -34,7 +33,6 @@ else:
             'LOCATION': '127.0.0.1:11211',
         }
     }
-
 TEMPLATE_DEBUG = DEBUG
 
 # Static files
@@ -72,7 +70,6 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
 )
-
 
 TEMPLATE_DIRS = (
     BASE_PATH + '/templates/'
