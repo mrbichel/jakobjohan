@@ -15,6 +15,10 @@ MANAGERS = ADMINS
 
 DEVELOPMENT_MODE = (platform.node() != PRODUCTION_HOSTNAME)
 
+
+ROOT_URLCONF = 'jakobjohan.urls'
+
+
 if DEVELOPMENT_MODE:
     DEBUG = True
     MEDIA_URL = '/m/'
@@ -34,9 +38,9 @@ else:
 TEMPLATE_DEBUG = DEBUG
 
 # Static files
-MEDIA_ROOT = BASE_PATH + '/media'
+MEDIA_ROOT = BASE_PATH + '/../media'
 STATICFILES_DIRS = (
-    BASE_PATH + '/static',
+    BASE_PATH + '/../static',
 )
 
 TIME_ZONE = 'Europe/Copenhagen'
@@ -69,7 +73,6 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
 )
 
-ROOT_URLCONF = 'urls'
 
 TEMPLATE_DIRS = (
     BASE_PATH + '/templates/'
